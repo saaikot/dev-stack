@@ -3,7 +3,7 @@
     "id": 1,
     "name": "React",
     "category": "Frontend",
-    "description": "A JavaScript library for building user interfaces.",
+    "description": "A JavaScript library for building user interfaces with component-based architecture.",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
@@ -11,52 +11,142 @@
   },
   {
     "id": 2,
+    "name": "Vue.js",
+    "category": "Frontend",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Progressive"
+  },
+  {
+    "id": 3,
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "The React framework for the web, enabling server-side rendering and static site generation.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "SSR"
+  },
+  {
+    "id": 4,
     "name": "Node.js",
     "category": "Backend",
-    "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
+    "description": "A JavaScript runtime built on Chrome's V8 engine for building scalable network applications.",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Essential"
   },
   {
-    "id": 3,
-    "name": "Tailwind CSS",
-    "category": "Styling",
-    "description": "A utility-first CSS framework for rapid UI development.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": 4,
-    "name": "PostgreSQL",
-    "category": "Database",
-    "description": "A powerful, open source object-relational database system.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "id": 5,
+    "name": "Django",
+    "category": "Backend",
+    "description": "A high-level Python web framework that encourages rapid development and clean design.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
     "rating": 4.6,
     "difficulty": "Intermediate",
-    "badge": "Essential"
-  },
-  {
-    "id": 5,
-    "name": "Docker",
-    "category": "DevOps",
-    "description": "A platform designed to help developers build, share, and run applications.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-    "rating": 4.7,
-    "difficulty": "Advanced",
-    "badge": "Containers"
+    "badge": "Batteries Included"
   },
   {
     "id": 6,
-    "name": "TypeScript",
-    "category": "Language",
-    "description": "A typed superset of JavaScript that compiles to plain JavaScript.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful, open source object-relational database system with strong reliability.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Reliable"
+  },
+  {
+    "id": 7,
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A document-based, distributed database built for modern application developers.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "rating": 4.5,
+    "difficulty": "Beginner-Friendly",
+    "badge": "NoSQL"
+  },
+  {
+    "id": 8,
+    "name": "Redis",
+    "category": "Database",
+    "description": "An in-memory data store used as a database, cache, and message broker for high performance.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": 9,
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A typed superset of JavaScript that compiles to plain JavaScript for safer code.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Type Safe"
+  },
+  {
+    "id": 10,
+    "name": "Python",
+    "category": "Language",
+    "description": "A programming language that lets you work quickly and integrate systems more effectively.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Versatile"
+  },
+  {
+    "id": 11,
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework for rapidly building custom user interfaces without leaving HTML.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Utility-First"
+  },
+  {
+    "id": 12,
+    "name": "Sass",
+    "category": "Styling",
+    "description": "A mature, stable, and powerful professional grade CSS extension language.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+    "rating": 4.6,
+    "difficulty": "Intermediate",
+    "badge": "Preprocessor"
+  },
+  {
+    "id": 13,
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A platform designed to help developers build, share, and run applications in isolated containers.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Containers"
+  },
+  {
+    "id": 14,
+    "name": "Kubernetes",
+    "category": "DevOps",
+    "description": "An open-source system for automating deployment, scaling, and management of containerized applications.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+    "rating": 4.6,
+    "difficulty": "Advanced",
+    "badge": "Orchestration"
+  },
+  {
+    "id": 15,
+    "name": "Vite",
+    "category": "Tools",
+    "description": "Next generation frontend tooling that provides an extremely fast development experience.",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Fast"
   }
 ]
