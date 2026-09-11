@@ -10,7 +10,7 @@ export default function Navbar() {
         
         {/* Mobile: Hamburger Menu (Left) */}
         <button
-          className="md:hidden text-gray-700 flex-shrink-0"
+         className="md:hidden text-gray-700 shrink-0"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -34,11 +34,11 @@ export default function Navbar() {
         </div>
 
         {/* Auth Buttons (Right - both mobile & desktop) */}
-        <div className="flex gap-2 md:gap-4 items-center flex-shrink-0">
+        <div className="flex gap-2 md:gap-4 items-center shrink-0">
           <button className="text-gray-700 hover:text-pink-500 font-medium text-sm md:text-base transition">
             Sign In
           </button>
-          <button className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-500 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-full font-medium text-sm md:text-base hover:opacity-90 transition">
+          <button className="bg-linear-to-r from-orange-500 via-pink-500 to-violet-500 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-full font-medium text-sm md:text-base hover:opacity-90 transition">
             Sign Up
           </button>
         </div>

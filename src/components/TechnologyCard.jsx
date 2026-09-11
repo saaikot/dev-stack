@@ -9,7 +9,7 @@ export default function TechnologyCard({ tech }) {
       </div>
 
       <h3 className="text-lg font-bold text-gray-800">{tech.name}</h3>
-      <p className="text-sm text-gray-500 mt-1 flex-grow">{tech.description}</p>
+     <p className="text-sm text-gray-500 mt-1 grow">{tech.description}</p>
 
       <div className="mt-4 space-y-2">
         <div className="flex justify-between text-xs text-gray-500">
