@@ -10,6 +10,9 @@ A web application to explore and build your ideal development stack by picking t
 - Vite (Build Tool)
 - JSON (for data)
 
+live server link:
+https://saaikot.github.io/dev-stack/
+
 
 echo "# dev-stack" >> README.md
 git init
