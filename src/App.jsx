@@ -3,17 +3,18 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TechnologyCard from './components/TechnologyCard';
 import StackSidebar from './components/StackSidebar';
+import Footer from './components/Footer';
 import technologiesData from './data/technologies.json';
 
 function App() {
   const [stack] = useState([]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
       <Hero />
 
-      <main className="container mx-auto px-4 py-12">
+      <main className="flex-grow container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-3">
             <h2 className="text-3xl font-bold mb-2 text-gray-800">
@@ -35,6 +36,8 @@ function App() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
