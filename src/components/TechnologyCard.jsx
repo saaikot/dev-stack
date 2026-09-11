@@ -1,4 +1,4 @@
-export default function TechnologyCard({ tech }) {
+export default function TechnologyCard({ tech, onAdd, isAdded }) {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 flex flex-col">
       <div className="flex justify-between items-start mb-4">
@@ -9,7 +9,7 @@ export default function TechnologyCard({ tech }) {
       </div>
 
       <h3 className="text-lg font-bold text-gray-800">{tech.name}</h3>
-     <p className="text-sm text-gray-500 mt-1 grow">{tech.description}</p>
+      <p className="text-sm text-gray-500 mt-1 grow">{tech.description}</p>
 
       <div className="mt-4 space-y-2">
         <div className="flex justify-between text-xs text-gray-500">
@@ -26,8 +26,16 @@ export default function TechnologyCard({ tech }) {
         </div>
       </div>
 
-      <button className="mt-5 w-full py-2 rounded-lg font-medium bg-gray-900 text-white hover:bg-gray-800 transition">
-        Add to Stack
+      <button
+        onClick={() => onAdd(tech)}
+        disabled={isAdded}
+        className={`mt-5 w-full py-2 rounded-lg font-medium transition ${
+          isAdded
+            ? 'bg-green-100 text-green-700 cursor-not-allowed'
+            : 'bg-gray-900 text-white hover:bg-gray-800'
+        }`}
+      >
+        {isAdded ? '✔ Added to Stack' : 'Add to Stack'}
       </button>
     </div>
   );

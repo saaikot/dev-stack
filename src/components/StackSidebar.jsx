@@ -1,4 +1,4 @@
-export default function StackSidebar({ stack }) {
+export default function StackSidebar({ stack, onRemove, onRemoveAll }) {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 sticky top-24">
       <h3 className="text-xl font-bold text-gray-800">Your Stack</h3>
@@ -21,8 +21,21 @@ export default function StackSidebar({ stack }) {
                   <p className="text-xs text-gray-500">{item.category}</p>
                 </div>
               </div>
+              <button
+                onClick={() => onRemove(item.id)}
+                className="text-gray-400 hover:text-red-500 transition"
+              >
+                ✕
+              </button>
             </div>
           ))}
+
+          <button
+            onClick={onRemoveAll}
+            className="w-full mt-4 py-2 border border-red-200 text-red-500 rounded-lg font-medium hover:bg-red-50 transition"
+          >
+            Remove All
+          </button>
         </div>
       )}
     </div>
