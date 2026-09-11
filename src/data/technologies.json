@@ -104,7 +104,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework for rapidly building custom user interfaces without leaving HTML.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    "icon": "https://cdn.simpleicons.org/tailwindcss/06B6D4",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Utility-First"

@@ -1,3 +1,5 @@
+import bannerImg from '../assets/banner-stack.png'; 
+
 export default function Hero() {
   return (
     <section className="bg-white py-16 md:py-24">
@@ -22,9 +24,12 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex-1 flex justify-center">
-          <div className="w-80 h-80 bg-gradient-to-br from-orange-400 via-pink-500 to-violet-600 rounded-3xl shadow-2xl flex items-center justify-center">
-            <span className="text-white text-6xl font-bold">3D</span>
-          </div>
+         
+          <img 
+            src={bannerImg} 
+            alt="Dev Stack 3D Banner" 
+            className="max-w-full h-auto rounded-lg drop-shadow-2xl"
+          />
         </div>
       </div>
     </section>
